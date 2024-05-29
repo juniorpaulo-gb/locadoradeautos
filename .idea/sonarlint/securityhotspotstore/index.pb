@@ -11,3 +11,8 @@ l
 <src/main/java/br/com/papodeengenharia/entidades/Veiculo.java,b/f/bf3afd2cfaab712db167a34071fd1b89a8b97d70
 n
 >src/main/java/br/com/papodeengenharia/entidades/Locatario.java,a/3/a39eec9a9224ad8c02594f854f1a359abdd50645
+n
+>src/main/java/br/com/papodeengenharia/entidades/Categoria.java,f/b/fbb10c20a6f88f6e12846b4b94cddfb744657cda
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302

@@ -1,6 +1,7 @@
 package br.com.papodeengenharia.entidades;
 
 import java.util.Collection;
+import java.util.Optional;
 
 public class Locatario {
     private Long id;
@@ -49,6 +50,21 @@ public class Locatario {
 
     public Boolean isBomPagador(){
         return divida()==0.0;
+    }
+
+    public void pagar(Locacao locacao){
+        if(!this.getId().equals(locacao.getLocatario().getId())){
+            throw new IllegalArgumentException("A Locacao nao pertence ao locatario");
+        }
+        if(locacao.getPaga()){
+           throw  new IllegalArgumentException("A Locacao já está paga");
+        }
+        locacao.setPaga(Boolean.TRUE);
+    }
+
+    public void pagar2(Locacao locacao){
+        Optional<Locacao> l = this.getLocacaos().stream().filter(locacao1 -> locacao1.getId().equals(locacao.getId()) && !locacao1.getPaga()).findAny();
+        l.ifPresent(l2 -> l2.setPaga(Boolean.TRUE));
     }
 
 
