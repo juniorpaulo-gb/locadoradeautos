@@ -16,3 +16,5 @@ n
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+j
+:src/main/java/br/com/papodeengenharia/entidades/Faixa.java,a/3/a331a6effd14e492e9b5e3af1f9ae8d5cedcd262
